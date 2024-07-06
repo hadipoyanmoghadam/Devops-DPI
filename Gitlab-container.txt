@@ -1,0 +1,29 @@
+sudo docker login --username=hadipoyanmoghadam@gmail.com
+Password:aA@123456
+
+docker pull gitlab/gitlab-ce
+
+####################################
+sudo docker run --detach 
+--publish 443:443 
+--publish 80:80 
+--publish 2022:22 
+--name gitlab 
+--restart always 
+--volume gitlab_config:/etc/gitlab 
+--volume gitlab_logs:/var/log/gitlab 
+--volume gitlab_data:/var/opt/gitlab 
+--shm-size 2gb 
+gitlab/gitlab-ce:latest
+
+#######################################
+
+
+http://172.18.20.176/users/sign_in
+
+USER : root
+PASS : 0P3r@na$im
+
+
+User : hpo	
+PASS : aA@13603294
