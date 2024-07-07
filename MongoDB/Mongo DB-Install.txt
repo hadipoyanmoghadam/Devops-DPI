@@ -1,0 +1,19 @@
+##################################
+Install mongoDB on docker (container) :
+
+
+docker run -d --name mongodb \ 
+-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \ 
+-e MONGO_INITDBROOT_PASSWORD=mongo@dmin \ 
+-p 27017:27017 -v mongodb:/data/db \
+--entrypoint=mongod mongo:7.0 
+
+
+##############################
+
+download 
+	MongoDB Compass Download (GUI)
+
+https://downloads.mongodb.com/compass/mongodb-compass-1.43.4-win32-x64.exe 
+
+####################################
