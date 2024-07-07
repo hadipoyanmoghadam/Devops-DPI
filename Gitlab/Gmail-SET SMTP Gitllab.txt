@@ -21,4 +21,4 @@ In /etc/gitlab/gitlab.rb:
 
 #########################################################
 
-orjginal hostname:9b9376747994
+orjginal hostname:   9b9376747994
