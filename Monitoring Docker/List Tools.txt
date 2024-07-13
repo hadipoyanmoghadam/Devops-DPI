@@ -1,0 +1,48 @@
+Url Best GUI managment docker :
+https://youtu.be/zxAmqY63eJE?feature=shared
+
+
+
+Docker stats   monitoring
+
+the Glances    monitoring
+
+Portainer      managment & monitoring
+
+Zabbix         monitoring
+
+CheckMK        monitoring
+
+
+#################################################################
+https://youtu.be/R0HlJsugOAE?feature=shared\
+
+kubectl
+
+rancher
+
+Portainer      
+
+k9s
+
+lens
+
+
+#################################################################
+https://youtu.be/HEklvsr7q54?feature=shared
+
+dockge
+	https://github.com/louislam/dockge
+
+
+#################################################################
+https://youtu.be/eTQ2iB-hjkk?feature=shared
+
+yacht
+
+
+
+#################################################################
+
+https://betterstack.com/community/comparisons/docker-monitoring-addons/
+

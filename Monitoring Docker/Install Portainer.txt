@@ -1,0 +1,16 @@
+Guid URL :
+https://www.youtube.com/watch?v=QBNaOdNSsx8
+
+https://www.youtube.com/watch?v=eTQ2iB-hjkk
+
+https://www.youtube.com/watch?v=vUanXTnoHyg
+
+
+sudo docker volume create portainer_data
+
+sudo docker run -d -p 9000:9000 --name portainer --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+
+
+http://172.18.20.176:9000
+
+
