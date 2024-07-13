@@ -14,7 +14,7 @@ services:
       - MONGODB_INITDB_ROOT_PASSWORD=pA55vv0Rd
     volumes:
       - mongodb_data:/data/db
-      - mongodb_config:/data/config
+      - mongodb_config:/data/configdb
   mongo-express:
     container_name: mongo-express
     image: mongo-express:1.0.0-18-alpine3.18
@@ -43,13 +43,26 @@ services:
       - 80:80
       - 2022:22
     restart: restart always
-    volumes: 
-      gitlab_config:/etc/gitlab 
+    volumes:
+      gitlab_config:/etc/gitlab
       gitlab_logs:/var/log/gitlab
       gitlab_data:/var/opt/gitlab
 #############################################################
---shm-size 2gb
+#     --shm-size 2gb
 #############################################################
+
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    networks:
+      - my-network
+    ports:
+      - 9000:9000
+    restart: unless-stopped
+    volumes:
+      /var/run/docker.sock:/var/run/docker.sock
+      portainer_data:/data
+
 volumes:
   mongodb_data:
     driver: local
@@ -60,6 +73,8 @@ volumes:
   gitlab_logs:
     driver: local
   gitlab_data:
+    driver: local
+  portainer_data:
     driver: local
 networks:
   my-network:
