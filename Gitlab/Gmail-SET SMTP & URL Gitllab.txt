@@ -1,0 +1,51 @@
+Gmail Account :
+		App Password:
+				Gitlab-172.18.20.176
+				pass : rjpp bypu iord nhhf
+
+https://docs.gitlab.com/omnibus/settings/smtp.html
+
+In /etc/gitlab/gitlab.rb:
+#####################################################
+
+        gitlab_rails['smtp_enable'] = true
+	gitlab_rails['smtp_address'] = "smtp.gmail.com"
+	gitlab_rails['smtp_port'] = 587
+	gitlab_rails['smtp_user_name'] = "info.hpm60@gmail.com"
+	gitlab_rails['smtp_password'] = "rjpp bypu iord nhhf"
+	gitlab_rails['smtp_domain'] = "smtp.gmail.com"
+	gitlab_rails['smtp_authentication'] = "login"
+	gitlab_rails['smtp_enable_starttls_auto'] = true
+	gitlab_rails['smtp_tls'] = false
+	gitlab_rails['smtp_openssl_verify_mode'] = 'peer'
+
+#########################################################
+
+orjginal hostname:   9b9376747994
+
+
+
+
+
+
+
+SET URL 
+ 
+ORGINAL 
+------------------------
+## GitLab URL
+##! URL on which GitLab will be reachable.
+##! For more details on configuring external_url see:
+##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab
+##!
+##! Note: During installation/upgrades, the value of the environment variable
+##! EXTERNAL_URL will be used to populate/replace this value.
+##! On AWS EC2 instances, we also attempt to fetch the public hostname/IP
+##! address from AWS. For more details, see:
+##! https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html
+# external_url 'GENERATED_EXTERNAL_URL'
+____________________
+EDIT END LINE
+______________________
+
+external_url "http://172.18.20.176:80"

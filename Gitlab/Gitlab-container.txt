@@ -17,3 +17,8 @@ PASS : 0P3r@na$im
 
 User : hpo	
 PASS : aA@13603294
+
+
+-e GITLAB_ROOT_EMAIL="info.hpm60@gmail.com" 
+-e GITLAB_ROOT_PASSWORD="13603294" 
+-e EXTERNAL_URL="http://172.18.20.174"
